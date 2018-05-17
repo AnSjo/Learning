@@ -9,7 +9,7 @@ dt5=pd.read_csv('to_read.csv')
 x1=dt1.drop_duplicates(subset=['book_id','user_id'],keep='first')
 
 #contains all rows having author name as 'Suzanne Collins'
-x2=dt2.loc[dt2['authors'] == 'Suzanne Collins']
+x2=dt2.loc[dt2['authors'] == 'John Greens']
 
 #get all the book_ids and tags_ids based on max count
 x11=dt3.loc[dt3.groupby(['goodreads_book_id'])['count'].idxmax()]   
